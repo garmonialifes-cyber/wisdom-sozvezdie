@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>WISDOM · Созвездие участниц</title>
+<meta name="description" content="Открытый каталог участниц сообщества WISDOM: подарки, сертификаты, услуги, искусство и консультации — покупайте у своих.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&family=Cormorant+Garamond:ital,wght@0,300;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --milk:#FFFDFB; --cream:#F8F4F0; --sand:#F1E8E0;
+  --nude:#D6B79E; --camel:#C9A78C;
+  --powder:#E2EBF0; --bluegrey:#D5E1E7;
+  --honey:#F0C66E;
+  --ink:#414141; --grey:#77716C;
+  --line:#E9E0D7;
+  --sans:"Jost", "Helvetica Neue", Arial, sans-serif;
+  --serif:"Cormorant Garamond", Georgia, serif;
+  --pad:clamp(20px,5vw,72px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--milk);color:var(--ink);font-family:var(--sans);font-weight:300;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+img{display:block;max-width:100%}
+.wrap{max-width:1400px;margin:0 auto;padding:0 var(--pad)}
+.eyebrow{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--grey);font-weight:400}
+.num{font-size:12px;letter-spacing:.2em;color:var(--camel);font-weight:400}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:30;background:rgba(255,253,251,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:80px}
+.bar .left{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--grey)}
+.mark{text-align:center;line-height:1}
+.mark b{display:block;font-weight:300;font-size:26px;letter-spacing:.62em;margin-right:-.62em;color:var(--ink)}
+.mark span{display:block;margin-top:9px;font-size:9.5px;letter-spacing:.5em;margin-right:-.5em;color:var(--camel);font-weight:400}
+nav{display:flex;justify-content:flex-end;gap:34px;font-size:13px;letter-spacing:.06em}
+nav a{position:relative;padding:4px 0}
+nav a::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .5s ease}
+nav a:hover::after{transform:scaleX(1)}
+nav .join{color:var(--camel)}
+
+/* ---------- intro ---------- */
+.intro{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.intro .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,5vw,90px);align-items:end;padding-top:clamp(40px,5vw,72px);padding-bottom:clamp(36px,4.5vw,60px)}
+.intro h1{font-weight:300;font-size:clamp(38px,4.4vw,64px);line-height:1.04;letter-spacing:-.012em;margin:20px 0 20px}
+.intro h1 em{font-family:var(--serif);font-style:italic;font-weight:300;color:var(--camel);letter-spacing:0}
+.lead{max-width:600px;color:var(--grey);font-size:17px}
+.lead b{font-weight:400;color:var(--ink)}
+.intro svg.sky{position:absolute;right:-40px;top:-30px;width:560px;height:320px;pointer-events:none;opacity:.9}
+.sky .dust{fill:var(--nude);opacity:.35}
+.sky .link{stroke:var(--nude);stroke-width:.7;fill:none;stroke-dasharray:1000;stroke-dashoffset:1000;animation:draw 3.4s ease forwards .3s}
+.sky .star{fill:var(--milk);stroke:var(--camel);stroke-width:1}
+@keyframes draw{to{stroke-dashoffset:0}}
+
+.search{position:relative;z-index:1}
+.search label{display:block;margin-bottom:12px}
+.field{display:flex;align-items:center;border-bottom:1px solid var(--ink);padding-bottom:12px;transition:border-color .4s}
+.field:focus-within{border-color:var(--camel)}
+.field input{flex:1;border:0;background:transparent;font:300 22px/1.3 var(--sans);color:var(--ink);outline:none;min-width:0}
+.field input::placeholder{color:#B9B0A8}
+.field button{flex:none;background:var(--honey);font-size:12px;letter-spacing:.16em;text-transform:uppercase;padding:14px 22px;border-radius:3px;transition:background .4s}
+.field button:hover{background:#ECBA55}
+.hints{margin-top:14px;font-size:13px;color:var(--grey)}
+.hints button{border-bottom:1px solid var(--line);margin-right:8px;font-size:13px;color:var(--grey);transition:border-color .4s,color .4s}
+.hints button:hover{color:var(--ink);border-color:var(--camel)}
+
+/* ---------- catalog ---------- */
+.catalog .wrap{display:grid;grid-template-columns:260px minmax(0,1fr);gap:clamp(30px,4.5vw,72px);padding-top:clamp(36px,4vw,56px);padding-bottom:clamp(80px,9vw,130px)}
+aside{position:sticky;top:104px;align-self:start;max-height:calc(100vh - 124px);overflow:auto;padding-right:4px;scrollbar-width:thin}
+aside .eyebrow{display:block;margin-bottom:14px}
+.rubrics{list-style:none;border-top:1px solid var(--ink)}
+.rubrics li{border-bottom:1px solid var(--line)}
+.rubric{width:100%;display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:12px 0 12px 0;text-align:left;font-size:15px;color:var(--ink);transition:color .35s,padding .45s}
+.rubric .n{font-size:12px;color:#B3AAA2;letter-spacing:.06em}
+.rubric:hover{padding-left:8px}
+.rubric.on{padding-left:16px;position:relative;font-weight:400}
+.rubric.on::before{content:"";position:absolute;left:0;top:50%;width:6px;height:6px;border-radius:50%;background:var(--camel);transform:translateY(-50%)}
+.rubric.on .n{color:var(--camel)}
+.rubric.empty{color:#A79E96}
+.formats{margin-top:34px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:13px;padding:8px 14px;border:1px solid var(--line);border-radius:2px;transition:background .35s,border-color .35s}
+.chip:hover{border-color:var(--nude)}
+.chip.on{background:var(--powder);border-color:var(--powder)}
+.addme{margin-top:36px;padding:22px 20px;background:var(--cream);font-size:14px;color:var(--grey);line-height:1.5}
+.addme a{display:inline-block;margin-top:10px;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink);border-bottom:1px solid var(--ink);padding-bottom:3px}
+
+.results-head{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding-bottom:18px;border-bottom:1px solid var(--line);margin-bottom:36px}
+.results-head h2{font-weight:300;font-size:clamp(28px,2.8vw,40px);line-height:1.1}
+.results-head span{font-size:13px;color:var(--grey);white-space:nowrap}
+
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:52px clamp(20px,2.4vw,36px)}
+.card{opacity:0;transform:translateY(18px);animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+.ph{position:relative;overflow:hidden;background:var(--sand);aspect-ratio:4/5}
+.ph img{width:100%;height:100%;object-fit:cover;object-position:50% 16%;filter:saturate(.86) contrast(.95) brightness(1.03) sepia(.06);transition:transform 1.6s cubic-bezier(.2,.7,.2,1)}
+.card:hover .ph img{transform:scale(1.04)}
+.ph.blank{display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,var(--powder),#EDF1F3)}
+.ph.blank.warm{background:linear-gradient(180deg,var(--sand),#F6F0EA)}
+.ph .ini{font-weight:200;font-size:clamp(48px,4.6vw,72px);letter-spacing:.12em;margin-right:-.12em;color:var(--camel)}
+.ph small{position:absolute;bottom:16px;left:0;right:0;text-align:center;font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--grey)}
+.ph .badge{position:absolute;top:14px;left:14px;background:var(--milk);font-size:10px;letter-spacing:.26em;text-transform:uppercase;padding:7px 11px;border-radius:2px}
+.meta{padding-top:18px}
+.meta .role{font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--camel);font-weight:400}
+.meta h3{font-weight:300;font-size:26px;line-height:1.12;margin:8px 0 6px}
+.meta .power{font-family:var(--serif);font-style:italic;font-size:18.5px;line-height:1.35}
+.buy{margin-top:16px;border-top:1px solid var(--line)}
+.buy li{list-style:none;display:flex;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px;line-height:1.4}
+.buy li span:last-child{color:var(--grey);white-space:nowrap}
+.more{display:inline-block;margin-top:16px;font-size:11px;letter-spacing:.24em;text-transform:uppercase;border-bottom:1px solid var(--ink);padding-bottom:4px;transition:color .4s,border-color .4s}
+.more:hover{color:var(--camel);border-color:var(--camel)}
+
+.vacant{border:1px dashed var(--nude);aspect-ratio:4/5;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:28px;gap:14px;color:var(--grey);font-size:14px;transition:background .4s}
+.vacant:hover{background:var(--cream)}
+.vacant b{font-weight:300;font-size:22px;color:var(--ink);line-height:1.2}
+.vacant i{width:9px;height:9px;border-radius:50%;border:1px solid var(--camel)}
+
+.nobody{grid-column:1/-1;padding:60px 0;text-align:center;color:var(--grey)}
+.nobody b{display:block;font-weight:300;font-size:30px;color:var(--ink);margin-bottom:10px}
+.nobody a{display:inline-block;margin-top:22px}
+
+.fill{margin-top:64px;display:flex;justify-content:space-between;align-items:center;gap:30px;border-top:1px solid var(--line);padding-top:30px}
+.fill p{font-size:14px;color:var(--grey);max-width:440px}
+.dots{display:flex;flex-wrap:wrap;gap:8px;max-width:400px}
+.dots i{width:7px;height:7px;border-radius:50%;background:var(--line)}
+.dots i.on{background:var(--camel)}
+
+/* ---------- own ---------- */
+section{padding:clamp(80px,10vw,150px) 0}
+.ownsec{background:var(--cream)}
+.own{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(30px,6vw,110px);align-items:start}
+.own blockquote{font-family:var(--serif);font-weight:300;font-size:clamp(34px,3.6vw,52px);line-height:1.15;margin-top:22px}
+.own blockquote em{color:var(--camel)}
+.step{display:grid;grid-template-columns:64px 1fr;padding:28px 0;border-top:1px solid var(--line)}
+.step:last-child{border-bottom:1px solid var(--line)}
+.step h4{font-weight:400;font-size:19px;margin-bottom:6px}
+.step p{color:var(--grey);font-size:15px;max-width:480px}
+
+/* quote */
+.quote{text-align:center;position:relative;overflow:hidden}
+.quote .q{font-family:var(--serif);font-weight:300;font-size:clamp(36px,5vw,74px);line-height:1.08;max-width:1000px;margin:26px auto 0}
+.quote .q em{color:var(--camel)}
+.quote svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.quote .wrap{position:relative;z-index:1}
+
+/* cta */
+.cta{border-top:1px solid var(--line);padding:0}
+.cta .wrap{display:grid;grid-template-columns:1fr 1fr}
+.c{padding:clamp(60px,8vw,110px) 0}
+.c+.c{border-left:1px solid var(--line);padding-left:clamp(24px,5vw,80px)}
+.c h3{font-weight:300;font-size:clamp(28px,3vw,42px);line-height:1.12;margin:18px 0;max-width:440px}
+.c p{color:var(--grey);max-width:420px;margin-bottom:36px}
+.btn{display:inline-block;background:var(--honey);font-size:13px;letter-spacing:.16em;text-transform:uppercase;padding:19px 34px;border-radius:3px;transition:background .4s}
+.btn:hover{background:#ECBA55}
+.btn.ghost{background:transparent;border:1px solid var(--ink);padding:18px 33px}
+.btn.ghost:hover{background:var(--ink);color:var(--milk)}
+
+footer{background:var(--cream);padding:56px 0 46px}
+footer .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+footer .mark{text-align:left}footer .mark b{font-size:20px}
+footer small{font-size:12px;color:var(--grey)}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity 1.1s ease,transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  .card{animation:none;opacity:1;transform:none}
+  .sky .link{animation:none;stroke-dashoffset:0}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:1180px){ .cards{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:900px){
+  .bar{grid-template-columns:auto 1fr;height:68px}
+  .bar .left{display:none}
+  .mark{text-align:left}.mark b{font-size:21px}
+  nav{gap:18px;font-size:12px}
+  nav a:not(.join){display:none}
+  .intro .wrap{grid-template-columns:1fr;gap:28px}
+  .intro svg.sky{width:360px;height:220px;right:-80px;top:-20px;opacity:.6}
+  .catalog .wrap{grid-template-columns:minmax(0,1fr);gap:24px}
+  aside,.catalog .wrap>div{min-width:0}
+  aside{position:sticky;top:68px;z-index:20;max-height:none;overflow:visible;background:rgba(255,253,251,.96);backdrop-filter:blur(8px);margin:0 calc(var(--pad)*-1);padding:12px var(--pad) 10px;border-bottom:1px solid var(--line)}
+  aside .eyebrow,.formats,.addme{display:none}
+  .rubrics{display:flex;gap:6px;overflow-x:auto;border:0;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .rubrics::-webkit-scrollbar{display:none}
+  .rubrics li{border:0;flex:none}
+  .rubric{padding:8px 14px;border:1px solid var(--line);border-radius:2px;font-size:13px;gap:8px;white-space:nowrap}
+  .rubric:hover{padding-left:14px}
+  .rubric.on{padding-left:14px;background:var(--ink);color:var(--milk);border-color:var(--ink)}
+  .rubric.on::before{display:none}
+  .rubric.on .n{color:var(--nude)}
+  .own{grid-template-columns:1fr}
+  .cta .wrap{grid-template-columns:1fr}
+  .c+.c{border-left:0;border-top:1px solid var(--line);padding-left:0}
+  .fill{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:600px){
+  .cards{grid-template-columns:1fr;gap:44px}
+  .field input{font-size:19px}
+  .field button{padding:12px 16px;font-size:11px}
+  .results-head{flex-direction:column;gap:4px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <div class="left">Экосистема Екатерины Петерсил</div>
+    <a class="mark" href="#top" aria-label="WISDOM"><b>WISDOM</b><span>СОЗВЕЗДИЕ</span></a>
+    <nav>
+      <a href="#catalog">Каталог</a>
+      <a href="#own">Для своих</a>
+      <a href="#join" class="join">Добавить себя</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="intro">
+  <svg class="sky" viewBox="0 0 560 320" aria-hidden="true">
+    <g id="dust"></g>
+    <path class="link" d="M300 90 L190 190 L330 250 L460 170 Z"/>
+    <circle class="star" cx="300" cy="90" r="6"/><circle class="star" cx="190" cy="190" r="5"/>
+    <circle class="star" cx="330" cy="250" r="5"/><circle class="star" cx="460" cy="170" r="5"/>
+  </svg>
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Открытый каталог участниц · сезон 2026</div>
+      <h1>Всё, что вам нужно, — <em>в нашем кругу</em></h1>
+      <p class="lead">Подарки и сертификаты, массаж и уход, музыка и картины, обучение и консультации — у участниц WISDOM можно найти и заказать самое разное. <b>Покупайте у своих.</b></p>
+    </div>
+    <form class="search" onsubmit="event.preventDefault();doSearch(document.getElementById('q').value)">
+      <label class="eyebrow" for="q">Я ищу</label>
+      <div class="field">
+        <input id="q" type="text" placeholder="например, подарок" autocomplete="off">
+        <button type="submit">Найти</button>
+      </div>
+      <div class="hints">Часто ищут:
+        <button type="button" data-cat="gifts">подарок</button>
+        <button type="button" data-cat="cert">сертификат</button>
+        <button type="button" data-cat="learn">обучение</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div id="catalog" class="catalog">
+  <div class="wrap">
+    <aside>
+      <span class="eyebrow">Рубрики</span>
+      <ul class="rubrics" id="rubrics"></ul>
+      <div class="formats">
+        <span class="eyebrow">Формат</span>
+        <div class="chips" id="formats">
+          <button class="chip" data-f="online">Онлайн</button>
+          <button class="chip" data-f="offline">Вживую</button>
+          <button class="chip" data-f="delivery">С доставкой</button>
+        </div>
+      </div>
+      <div class="addme">Вы участница WISDOM, и вам есть что предложить своим?<br><a href="#join">Добавить себя</a></div>
+    </aside>
+
+    <div>
+      <div class="results-head">
+        <h2 id="rh">Все участницы</h2>
+        <span id="rc"></span>
+      </div>
+      <div class="cards" id="cards"></div>
+      <div class="fill">
+        <p>Созвездие заполняется: в сезоне 48 мест, и каждая участница может занять своё — со своими товарами и услугами.</p>
+        <div class="dots" id="dots" aria-label="4 из 48 мест заняты"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- own -->
+<section id="own" class="ownsec">
+  <div class="wrap own">
+    <div>
+      <div class="num rv">Для своих</div>
+      <blockquote class="rv">Покупая у своих, вы покупаете у тех, <em>кого знаете в лицо</em>.</blockquote>
+    </div>
+    <div>
+      <div class="step rv"><span class="num">01</span><div><h4>Каждая участница даёт привилегию для своих</h4><p>Скидку, подарок или ранний доступ — то, что она готова дать женщинам сообщества.</p></div></div>
+      <div class="step rv"><span class="num">02</span><div><h4>Вы называете слово WISDOM при заказе</h4><p>Без анкет и длинных промокодов: участницы узнают друг друга.</p></div></div>
+      <div class="step rv"><span class="num">03</span><div><h4>После — рекомендуете её в созвездии</h4><p>Ваш отзыв появляется на её странице. Так растут доверие и связи внутри сообщества.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- quote -->
+<section class="quote">
+  <svg viewBox="0 0 1440 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <path d="M60 560 L190 520 L300 556" stroke="#E2D7CC" stroke-width="1" fill="none"/>
+    <path d="M1150 48 L1270 86 L1390 52" stroke="#E2D7CC" stroke-width="1" fill="none"/>
+    <circle cx="60" cy="560" r="2.5" fill="#D6B79E"/><circle cx="190" cy="520" r="2.5" fill="#D6B79E"/><circle cx="300" cy="556" r="2.5" fill="#D6B79E"/>
+    <circle cx="1150" cy="48" r="2.5" fill="#D6B79E"/><circle cx="1270" cy="86" r="2.5" fill="#D6B79E"/><circle cx="1390" cy="52" r="2.5" fill="#D6B79E"/>
+  </svg>
+  <div class="wrap">
+    <div class="eyebrow rv">W I S D O M</div>
+    <p class="q rv">Когда вам не нужен ещё один учитель — <em>вам нужны равные</em>.</p>
+  </div>
+</section>
+
+<!-- cta -->
+<section id="join" class="cta">
+  <div class="wrap">
+    <div class="c rv">
+      <div class="eyebrow">Для участниц WISDOM</div>
+      <h3>Займите своё место в созвездии</h3>
+      <p>Заполните анкету: фото, чем вы полезны, что у вас можно купить, ссылки. Страница соберётся сама, а обновлять её можно в любой момент.</p>
+      <a class="btn" href="#">Добавить себя</a>
+    </div>
+    <div class="c rv">
+      <div class="eyebrow">Для гостей</div>
+      <h3>Хотите в это окружение?</h3>
+      <p>WISDOM — мастермайнд-сообщество сильных женщин: группы до 8 человек, встречи с Екатериной и гостями сезона.</p>
+      <a class="btn ghost" href="#">Узнать о WISDOM</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="mark"><b>WISDOM</b><span>СОЗВЕЗДИЕ</span></div>
+    <small>WISDOM Mastermind Ecosystem · 2026 · прототип</small>
+  </div>
+</footer>
+
+<script>
+var RUBRICS=[
+  {id:'all',    name:'Все участницы'},
+  {id:'gifts',  name:'Подарки и товары'},
+  {id:'cert',   name:'Подарочные сертификаты'},
+  {id:'beauty', name:'Красота, тело, массаж'},
+  {id:'health', name:'Здоровье и состояние'},
+  {id:'art',    name:'Искусство и музыка'},
+  {id:'home',   name:'Дом и интерьер'},
+  {id:'travel', name:'Путешествия и ретриты'},
+  {id:'learn',  name:'Обучение и группы'},
+  {id:'consult',name:'Консультации'},
+  {id:'biz',    name:'Бизнес, ИИ, digital'},
+  {id:'events', name:'События и праздники'}
+];
+var WORDS={gifts:'подар товар фаберлик faberlic набор',cert:'сертификат',beauty:'массаж красот уход косметик тело',health:'здоров состоян',art:'музык картин искусств',home:'дом интерьер',travel:'путешеств ретрит',learn:'обучен курс групп мастермайнд практикум',consult:'консультац разбор',biz:'бизнес ии нейросет digital автоматизац',events:'событ праздник'};
+var PEOPLE=[
+  {name:'Светлана Устратова', role:'Мастерская ИИ-решений', badge:'ИИ и подарки', photo:'img/svetlana.jpg',
+   power:'Собирает для предпринимательниц команду «люди + ИИ» и подбирает подарки Faberlic под любой повод.',
+   cats:['gifts','cert','learn','consult','biz'], f:['online','delivery'],
+   buy:[['Подарочные наборы Faberlic под ваш повод','по запросу'],['Мастермайнд-группа «Люди + ИИ» · 3 месяца','100 000 ₽'],['Практикум «ИИ-сотрудник за день»','подробнее']]},
+  {name:'Екатерина Петерсил', role:'Основательница WISDOM', badge:'Основательница', ini:'ЕП', warm:true,
+   power:'Собирает равных — женщин, которым не нужен ещё один учитель.',
+   cats:['learn','consult'], f:['online','offline'],
+   buy:[['Личная мастермайнд-группа Екатерины · сезон','350 000 ₽']]},
+  {name:'Анна Митягина', role:'Проявленность', ini:'АМ',
+   power:'Помогает выйти из тени и быть услышанной.',
+   cats:['learn','consult'], f:['online'],
+   buy:[['Мастермайнд-группа «Проявленность»','подробнее']]},
+  {name:'Людмила', role:'Мастермайнд-группа', ini:'Л', warm:true,
+   power:'Что у Людмилы можно купить, она впишет сама.',
+   cats:['learn'], f:['online'],
+   buy:[]}
+];
+var state={cat:'all',f:null};
+
+function fits(p){return (state.cat==='all'||p.cats.indexOf(state.cat)>-1)&&(!state.f||p.f.indexOf(state.f)>-1)}
+function plural(n){var m=n%10,h=n%100;if(m===1&&h!==11)return n+' участница';if(m>=2&&m<=4&&(h<12||h>14))return n+' участницы';return n+' участниц'}
+
+function drawRubrics(){
+  var ul=document.getElementById('rubrics');ul.innerHTML='';
+  RUBRICS.forEach(function(r){
+    var n=PEOPLE.filter(function(p){return r.id==='all'||p.cats.indexOf(r.id)>-1}).length;
+    var li=document.createElement('li');
+    var b=document.createElement('button');
+    b.className='rubric'+(state.cat===r.id?' on':'')+(n===0?' empty':'');
+    b.innerHTML='<span>'+r.name+'</span><span class="n">'+(n||'—')+'</span>';
+    b.onclick=function(){state.cat=r.id;render(true)};
+    li.appendChild(b);ul.appendChild(li);
+  });
+}
+function card(p,i){
+  var ph=p.photo?'<div class="ph"><img src="'+p.photo+'" alt="'+p.name+'">'+(p.badge?'<span class="badge">'+p.badge+'</span>':'')+'</div>'
+    :'<div class="ph blank'+(p.warm?' warm':'')+'"><span class="ini">'+p.ini+'</span><small>портрет скоро</small>'+(p.badge?'<span class="badge">'+p.badge+'</span>':'')+'</div>';
+  var buy=p.buy.length?'<ul class="buy">'+p.buy.map(function(b){return '<li><span>'+b[0]+'</span><span>'+b[1]+'</span></li>'}).join('')+'</ul>':'';
+  return '<article class="card" style="animation-delay:'+(i*90)+'ms">'+ph+'<div class="meta"><div class="role">'+p.role+'</div><h3>'+p.name+'</h3><p class="power">'+p.power+'</p>'+buy+'<a class="more" href="#">Открыть страницу</a></div></article>';
+}
+function render(scroll){
+  drawRubrics();
+  document.querySelectorAll('#formats .chip').forEach(function(c){c.classList.toggle('on',c.dataset.f===state.f)});
+  var r=RUBRICS.filter(function(x){return x.id===state.cat})[0];
+  var list=PEOPLE.filter(fits);
+  document.getElementById('rh').textContent=r.name;
+  document.getElementById('rc').textContent=plural(list.length);
+  var html=list.map(card).join('');
+  if(!list.length){
+    html='<div class="nobody"><b>Здесь пока никого</b>В этой рубрике ещё есть место — может быть, оно ваше.<br><a class="more" href="#join">Добавить себя</a></div>';
+  } else if(state.cat==='all' && !state.f){
+    html+='<a class="vacant card" href="#join" style="animation-delay:'+(list.length*90)+'ms"><i></i><b>Здесь может быть<br>ваша карточка</b>Массаж, музыка, картины, сертификаты — расскажите, что у вас можно купить</a>';
+  }
+  document.getElementById('cards').innerHTML=html;
+  if(scroll && window.innerWidth>900){var t=document.getElementById('catalog').getBoundingClientRect().top+window.scrollY-80;if(window.scrollY>t+40||window.scrollY<t-200)window.scrollTo({top:t,behavior:'smooth'})}
+}
+function doSearch(q){
+  q=(q||'').toLowerCase().trim(); if(!q){state.cat='all';render(true);return}
+  for(var k in WORDS){var ws=WORDS[k].split(' ');for(var i=0;i<ws.length;i++){if(q.indexOf(ws[i])>-1||ws[i].indexOf(q)===0){state.cat=k;render(true);return}}}
+  state.cat='all';render(true);
+}
+document.querySelectorAll('#formats .chip').forEach(function(c){c.onclick=function(){state.f=state.f===c.dataset.f?null:c.dataset.f;render(false)}});
+document.querySelectorAll('.hints button').forEach(function(b){b.onclick=function(){state.cat=b.dataset.cat;render(true)}});
+
+(function(){
+  var g=document.getElementById('dust'),s=11;function r(){s=(s*9301+49297)%233280;return s/233280}
+  for(var i=0;i<34;i++){var c=document.createElementNS('http://www.w3.org/2000/svg','circle');c.setAttribute('cx',(20+r()*520).toFixed(1));c.setAttribute('cy',(14+r()*290).toFixed(1));c.setAttribute('r',(0.7+r()*1.4).toFixed(1));c.setAttribute('class','dust');g.appendChild(c)}
+  var d=document.getElementById('dots');for(var j=0;j<48;j++){var e=document.createElement('i');if(j<PEOPLE.length)e.className='on';d.appendChild(e)}
+  render(false);
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
